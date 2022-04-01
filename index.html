@@ -195,42 +195,7 @@
       <p class="paragraph-3 nerf_text" style="color:#000000">We present a method that achieves view-consistent
         stylized scenes from novel views, with visually impressive texture details on novel view synthesis, signed distance function and 
         2D coordinate-based mapping function.</p>
-        <div class="nerf_pipeline_cols w-col w-col-12 w-col-tiny-tiny-stack"><img
-          src="./INS/teaser.svg"
-          sizes="(max-width: 479px) 92vw, (max-width: 767px) 94vw, (max-width: 991px) 465.328125px, 606.6640625px"
-          alt="" class="nerf_volume_pipeline"></div>
-      <p class="paragraph-3 nerf_text" style="color:#000000">Our algorithm is a fully-connected (non-convolutional) deep
-        network, whose input is a single continuous coordinate and pre-defined one-hot style embedding and whose output is a stylized color value.</p>
-      <div class="columns-5 w-row">
-        <div class="nerf_pipeline_cols w-col w-col-8 w-col-tiny-tiny-stack"><img
-            src="./INS/arc.svg"
-            sizes="(max-width: 479px) 92vw, (max-width: 767px) 94vw, (max-width: 991px) 465.328125px, 606.6640625px"
-            alt="" class="nerf_volume_pipeline"></div>
-        <div class="w-col w-col-4 w-col-tiny-tiny-stack"><img
-            src="./INS/arc_nerf.svg" alt=""
-            class="nerf_volume_rendering"></div>
-      </div>
-      <p class="paragraph-3 nerf_text" style="color:#000000">We introduce a Style Implicit Module (SIM) to the ordinary implicit representation, 
-        and coin the later one as Content Implicit Module (CIM) in our framework. During the training process, the stylized 
-        information and content scene are encoded as one continuous representation, and then fused by another Amalgamation Module (AM). </p>
-    </div>
-  </div>
-  <div class="white_section_nerf wf-section">
-    <div class="w-container">
-      <h2 class="grey-heading_nerf" style="margin-top: 3em">Results</h2>
-      <p class="paragraph-3 nerf_text nerf_results_text" style="color:#000000">Here are stylization results on NeRF-Synthetic and LLFF datasets. 
-        We can see INS generates faithful and view-consistent results for new viewpoints, with rich textures across scenes and styles.</p>
-      <div>
-        <div class="video_class w-embed"><video width="100%" height="100%" muted="" controls="" loop=""
-            preload="metadata"
-            poster="./INS/overall_poster.png">
-            <source
-              src="./INS/overall.mp4"
-              type="video/mp4">
-            Your browser does not support the video tag.
-          </video></div>
-
-
+        
           <div class="ui four column grid">
             <div class="row">
               <div class="column"><video
@@ -261,6 +226,42 @@
                       src="./INS/videos/ours_horns_gris1.mp4" width="100%"
                       loop autoplay muted playsinline></video></div>
           </div>
+          
+          <div class="nerf_pipeline_cols w-col w-col-12 w-col-tiny-tiny-stack"><img
+            src="./INS/teaser.svg"
+            sizes="(max-width: 479px) 92vw, (max-width: 767px) 94vw, (max-width: 991px) 465.328125px, 606.6640625px"
+            alt="" class="nerf_volume_pipeline"></div>
+  
+      <p class="paragraph-3 nerf_text" style="color:#000000">Our algorithm is a fully-connected (non-convolutional) deep
+        network, whose input is a single continuous coordinate and pre-defined one-hot style embedding and whose output is a stylized color value.</p>
+      <div class="columns-5 w-row">
+        <div class="nerf_pipeline_cols w-col w-col-8 w-col-tiny-tiny-stack"><img
+            src="./INS/arc.svg"
+            sizes="(max-width: 479px) 92vw, (max-width: 767px) 94vw, (max-width: 991px) 465.328125px, 606.6640625px"
+            alt="" class="nerf_volume_pipeline"></div>
+        <div class="w-col w-col-4 w-col-tiny-tiny-stack"><img
+            src="./INS/arc_nerf.svg" alt=""
+            class="nerf_volume_rendering"></div>
+      </div>
+      <p class="paragraph-3 nerf_text" style="color:#000000">We introduce a Style Implicit Module (SIM) to the ordinary implicit representation, 
+        and coin the later one as Content Implicit Module (CIM) in our framework. During the training process, the stylized 
+        information and content scene are encoded as one continuous representation, and then fused by another Amalgamation Module (AM). </p>
+    </div>
+  </div>
+  <div class="white_section_nerf wf-section">
+    <div class="w-container">
+      <h2 class="grey-heading_nerf" style="margin-top: 3em">Results</h2>
+      <p class="paragraph-3 nerf_text nerf_results_text" style="color:#000000">Here are stylization results on NeRF-Synthetic and LLFF datasets. 
+        We can see INS generates faithful and view-consistent results for new viewpoints, with rich textures across scenes and styles.</p>
+      <div>
+        <div class="video_class w-embed"><video width="100%" height="100%" muted="" controls="" loop=""
+            preload="metadata"
+            poster="./INS/overall_poster.png">
+            <source
+              src="./INS/overall.mp4"
+              type="video/mp4">
+            Your browser does not support the video tag.
+          </video></div>
 
       </div>
     </div>
